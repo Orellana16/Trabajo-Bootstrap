@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ocean Wonders</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        /* Efecto de foco suave para los inputs */
+        input:focus,
+        select:focus,
+        textarea:focus {
+            box-shadow: 0 0 0 4px rgba(8, 145, 178, 0.1);
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <header class="bg-cyan-800 text-white shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+
+            <a href="tailwind.html" class="flex items-center space-x-2">
+                <span class="text-3xl">🐬</span>
+                <h1 class="text-xl font-bold uppercase tracking-tighter">Ocean Wonders</h1>
+            </a>
+
+            <button class="lg:hidden text-3xl focus:outline-none"
+                onclick="document.getElementById('menu').classList.toggle('hidden')">
+                ☰
+            </button>
+
+            <nav id="menu"
+                class="hidden lg:flex flex-col lg:flex-row w-full lg:w-auto mt-4 lg:mt-0 text-sm font-medium uppercase tracking-widest text-center">
+                <a href="tailwind.html"
+                    class="block py-4 border-b border-cyan-700 lg:border-none lg:px-4 hover:bg-cyan-700 lg:hover:bg-transparent hover:text-yellow-300 transition-all">Inicio</a>
+                <a href="especies.html"
+                    class="block py-4 border-b border-cyan-700 lg:border-none lg:px-4 hover:bg-cyan-700 lg:hover:bg-transparent hover:text-yellow-300 transition-all">Especies</a>
+                <a href="visitanos.html"
+                    class="block py-4 border-b border-cyan-700 lg:border-none lg:px-4 hover:bg-cyan-700 lg:hover:bg-transparent hover:text-yellow-300 transition-all">Visítanos</a>
+                <a href="contacto.html"
+                    class="block py-4 border-b border-cyan-700 lg:border-none lg:px-4 hover:bg-cyan-700 lg:hover:bg-transparent text-yellow-400">Contacto</a>
+                <a href="sobre-nosotros.html"
+                    class="block py-4 lg:border-none lg:px-4 hover:bg-cyan-700 lg:hover:bg-transparent hover:text-yellow-300 transition-all">Sobre Nosotros</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="relative bg-cyan-900 py-24 text-white text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="fondoTortuga.jpg" class="w-full h-full object-cover opacity-40" alt="Fondo Marino">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-900 via-transparent to-cyan-900/50"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-2xl tracking-tight">
+                Estamos a tu servicio
+            </h2>
+            <p class="text-cyan-50 max-w-2xl mx-auto text-lg md:text-xl font-light leading-relaxed">
+                ¿Dudas sobre tu entrada o quieres organizar una visita escolar?
+                Escríbenos y nos sumergiremos en tu consulta.
+            </p>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-6 -mt-12 relative z-20 flex-grow mb-12">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+
+            <div class="lg:col-span-2 space-y-6">
+                <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-cyan-500">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-8">Información de Enlace</h3>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-cyan-100 p-3 rounded-2xl text-2xl">📍</div>
+                            <div>
+                                <p class="font-bold text-gray-800">Ubicación Principal</p>
+                                <p class="text-gray-600 text-sm leading-relaxed">Avenida del Puerto, 42, 11500<br>El
+                                    Puerto de Santa María, Cádiz</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-cyan-100 p-3 rounded-2xl text-2xl">📞</div>
+                            <div>
+                                <p class="font-bold text-gray-800">Atención Telefónica</p>
+                                <p class="text-gray-600 text-sm">+34 956 123 456</p>
+                                <p class="text-[10px] text-cyan-600 font-bold uppercase mt-1">L-D: 10h a 20h</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-cyan-100 p-3 rounded-2xl text-2xl">✉️</div>
+                            <div>
+                                <p class="font-bold text-gray-800">Correo Directo</p>
+                                <p class="text-gray-600 text-sm">hola@oceanwonders.es</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-10 rounded-2xl overflow-hidden shadow-inner grayscale hover:grayscale-0 transition-all duration-700 group">
+                        <img src="https://placehold.co/600x400/0891b2/ffffff?text=Ver+en+Google+Maps" alt="Mapa"
+                            class="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3">
+                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-xl border-t-8 border-yellow-400">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">Envíanos un mensaje</h3>
+                    <p class="text-gray-500 text-sm mb-8">Prometemos responderte en menos de 24 horas laborables.</p>
+
+                    <form action="#" class="space-y-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label for="nombre"
+                                    class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Nombre
+                                    Completo</label>
+                                <input type="text" id="nombre"
+                                    class="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:bg-white transition-all text-sm"
+                                    placeholder="Ej. Juan Pérez">
+                            </div>
+                            <div>
+                                <label for="email"
+                                    class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Email de
+                                    contacto</label>
+                                <input type="email" id="email"
+                                    class="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:bg-white transition-all text-sm"
+                                    placeholder="juan@ejemplo.com">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="asunto"
+                                class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Motivo de la
+                                consulta</label>
+                            <select id="asunto"
+                                class="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:bg-white transition-all text-sm appearance-none">
+                                <option>Información General</option>
+                                <option>Reserva de Grupos o Colegios</option>
+                                <option>Prensa y Comunicación</option>
+                                <option>Trabaja con Nosotros</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="mensaje"
+                                class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">¿Cómo
+                                podemos ayudarte?</label>
+                            <textarea id="mensaje" rows="5"
+                                class="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:bg-white transition-all text-sm"
+                                placeholder="Escribe aquí tu consulta detalladamente..."></textarea>
+                        </div>
+
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="w-full py-4 bg-cyan-600 text-white font-bold rounded-2xl hover:bg-cyan-700 hover:shadow-2xl shadow-lg transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center space-x-2">
+                                <span>Lanzar Mensaje al Océano</span>
+                                <span class="text-xl">🌊</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 px-6 border-t border-slate-800">
+        <div class="container mx-auto text-center">
+            <p class="text-white font-bold mb-2 tracking-widest uppercase italic">Ocean Wonders</p>
+            <p class="text-xs mb-6">Conectando mentes con el mundo submarino.</p>
+            <div class="border-t border-slate-800 pt-6 text-[10px] uppercase tracking-tighter">
+                &copy; 2026 El Puerto de Santa María • Cádiz, España.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
